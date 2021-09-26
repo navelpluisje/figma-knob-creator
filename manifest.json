@@ -1,0 +1,10 @@
+{
+  "name": "Knob Creator",
+  "id": "1021426556483489394",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui/index.html",
+  "editorType": [
+    "figma"
+  ]
+}
