@@ -4,7 +4,7 @@
 
 Knob Creator is a Figma plugin to create knob stack images. These can be used for creating themes for digital audio workstations, VST plugins, etc. Th aim of this plugin is to make this as easy as possible.
 
-Go to the [Howto](/howto) page for an explanation on how to use his plugin.
+Go to the [Howto](/figma-knob-creator/howto) page for an explanation on how to use his plugin.
 
 ### Contribute
 
