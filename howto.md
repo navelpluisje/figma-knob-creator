@@ -18,8 +18,12 @@ Within the group you can have your separate layers to build your knob out of. De
 * `value`: When starting the `value` keyword, the arc will be set to the value. *This Node must be an Arc*
     * `value-center`: The fill for the value will be left and right from the center
 
-I hope this image will give you a better undestanding of the above:
+There is no need to use them all in every knob off course. I hope this image will give you a better undestanding of the above:
 
 ![knob settings](/assets/knob-keywords.png)
+
+And the structure would look like:
+
+![knob settings](/assets/knob-structure.png)
 
 #### Node types
