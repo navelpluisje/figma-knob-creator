@@ -20,6 +20,6 @@ Within the group you can have your separate layers to build your knob out of. De
 
 I hope this image will give you a better undestanding of the above:
 
-![knob settings](/assets/kno-keywords.png)
+![knob settings](/assets/knob-keywords.png)
 
 #### Node types
