@@ -14,7 +14,7 @@ figma.showUI(__html__, {
   width: 450,
   height: 250,
   title: 'Create a knob',
-})  
+})
 
 figma.ui.onmessage = (message) => {
   // If the Node to create the knob from is a Group, we put it in a Frame first
@@ -27,15 +27,24 @@ figma.ui.onmessage = (message) => {
 
   if (
     figma.currentPage.selection[0].type === 'FRAME'
+    && figma.currentPage.selection[0].children.length === 0
+  ) {
+    figma.notify('The selected Node is an empty frame. Please select a valid Node')
+    figma.closePlugin();
+    return;
+  }
+
+  if (
+    figma.currentPage.selection[0].type === 'FRAME'
     && figma.currentPage.selection[0].children[0].type === 'GROUP'
     && hasRotatingNodes(figma.currentPage.selection[0].children[0].children)
-  ) {  
+  ) {
     createRotary(
-      parseInt(message['nb-steps'], 10), 
+      parseInt(message['nb-steps'], 10),
       parseInt(message['nb-degrees'], 10)
     );
   } else {
-    figma.notify('No valid Node selected for creating a Knob') 
+    figma.notify('No valid Node selected for creating a Knob')
   }
   figma.closePlugin();
 }
