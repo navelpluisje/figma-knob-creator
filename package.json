@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A Figma plugin for creating rotary knobs.",
   "main": "code.js",
+  "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "watch": "rollup --config rollup.config.js -w"
@@ -10,12 +11,12 @@
   "author": "Erwin Goossen<erwin@navelpluisje.nl>",
   "license": "ISC",
   "devDependencies": {
-    "@figma/plugin-typings": "^1.34.1",
-    "rollup": "^2.57.0",
+    "@figma/plugin-typings": "^1.74.0",
+    "rollup": "^3.28.0",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-copy-watch": "^0.0.1",
-    "rollup-plugin-typescript2": "^0.30.0",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.3"
+    "rollup-plugin-typescript2": "^0.35.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.1.6"
   }
 }

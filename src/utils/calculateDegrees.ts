@@ -1,4 +1,4 @@
-const radiusOfffset = (Math.PI * 2) / 360;
+const radiusOffset = (Math.PI * 2) / 360;
 
 export const calculateDegrees = (steps: number, degrees: number) => {
   const degreesStep = degrees / (steps - 1);
@@ -11,20 +11,20 @@ export const calculateDegrees = (steps: number, degrees: number) => {
 }
 
 export const getRangeStart = (range: number) => (
-  (90 + (360 - range) / 2) * radiusOfffset
+  (90 + (360 - range) / 2) * radiusOffset
 );
 
 export const getRangeEnd = (startingAngle: number, range: number) => (
-  startingAngle + range * radiusOfffset
+  startingAngle + range * radiusOffset
 );
- 
+
 export const getValueEnd = (startingAngle: number, stepSize: number, index: number) => {
-  const angle = stepSize * index * radiusOfffset;
+  const angle = stepSize * index * radiusOffset;
   return startingAngle + angle;
 }
 
 export const getCenteredValueEnd = (range: number, stepSize: number, index: number) => {
   const start = getRangeStart(range);
-  const angle = stepSize * index * radiusOfffset;
+  const angle = stepSize * index * radiusOffset;
   return start + angle;
 }

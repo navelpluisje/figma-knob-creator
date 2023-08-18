@@ -1,4 +1,4 @@
-type Action ='value'|'range'|'rotate';
+type Action = 'value' | 'range' | 'rotate';
 
 const hasRotate = (name: string): boolean => {
   return /^rotate/i.test(name)
@@ -17,7 +17,7 @@ export const hasCenter = (name: string): boolean => {
 }
 
 
-export const getAction = (name): Action|null => {
+export const getAction = (name): Action | null => {
   const action = /^(value|range|rotate)/i.exec(name);
   return action ? action[0].toLocaleLowerCase() as Action : null;
 }

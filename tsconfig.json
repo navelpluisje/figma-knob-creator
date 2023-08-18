@@ -3,14 +3,19 @@
     "baseUrl": "./src/",
     "outDir": "dist",
     "target": "es6",
-    "lib": ["es6"],
+    "lib": [
+      "es6"
+    ],
     "typeRoots": [
       "./node_modules/@types",
       "./node_modules/@figma"
-    ]
+    ],
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

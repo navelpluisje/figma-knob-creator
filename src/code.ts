@@ -9,10 +9,10 @@ if (!figma.currentPage.selection.length) {
   figma.closePlugin();
 }
 
-// Show our wonderfull ui
+// Show our wonderful ui
 figma.showUI(__html__, {
   width: 450,
-  height: 250,
+  height: 350,
   title: 'Create a knob',
 })
 
@@ -39,9 +39,12 @@ figma.ui.onmessage = (message) => {
     && figma.currentPage.selection[0].children[0].type === 'GROUP'
     && hasRotatingNodes(figma.currentPage.selection[0].children[0].children)
   ) {
+    console.log({ message })
     createRotary(
       parseInt(message['nb-steps'], 10),
-      parseInt(message['nb-degrees'], 10)
+      parseInt(message['nb-degrees'], 10),
+      message['frame-name'] || 'step',
+      message['step-direction'] || 'vertical',
     );
   } else {
     figma.notify('No valid Node selected for creating a Knob')
