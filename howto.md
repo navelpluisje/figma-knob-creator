@@ -2,7 +2,7 @@
 
 ### Install
 
-* In your favorite browser visit: [Knob Creator](https://www.figma.com/community/plugin/1021426556483489394/Knob-Creator)
+* In your favorite browser visit: [Knob Creator](https://www.figma.com/community/plugin/1030842037042371583/Knob-Creator)
 * Or, search in your App for `Knob Creator` in the Community area
 * Click the install button
 
